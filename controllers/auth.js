@@ -46,15 +46,12 @@ const getUserById = (req, res = response ) =>{
 }
 const createUser = (req, res = response ) =>{
     
-    console.log(req.body);
     try {
         const nombre = req.body.nombre
 
         const id = usuarios.length + 1
 
         usuarios.push({ id: id, nombre: nombre });
-
-        console.log(usuarios);
     
         return res.json({
             ok: true,
