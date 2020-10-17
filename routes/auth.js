@@ -25,7 +25,7 @@ router.get('/usuarios/:id', getUserById);
 router.post(
     '/usuarios',
     [
-        check('name','El nombre es obligatorio').not().isEmpty(),
+        check('nombre','El nombre es obligatorio').not().isEmpty(),
         validationsFields
         
     ],

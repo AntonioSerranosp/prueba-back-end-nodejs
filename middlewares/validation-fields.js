@@ -11,8 +11,6 @@ const validationsFields = (req, res = response, next) => {
             errors: errors.mapped()
         });
     }
-
-
     next();
 }
 
